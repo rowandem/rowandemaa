@@ -1,0 +1,97 @@
+// Vibe Coding case study — moving from Figma to Claude Code
+
+function VibeCodingCase({ lang, t, onBack, onMore }) {
+  const copy = lang === "nl" ? {
+    subtitle: "Van Figma naar Claude Code",
+    role: "Product Designer", year: "2026", duration: "doorlopend",
+    tools: ["Claude Code", "GitHub", "GitLab", "Figma"],
+    intro: "Sinds eind vorig jaar werk ik meer met Claude dan met Figma. Dit is het verhaal van hoe dat zo gekomen is.",
+    sections: [
+      { h: "Het startpunt", p: "Eind vorig jaar wilde ik meer leren dan alleen HTML en CSS. Ik begon met cursussen Python, maar toen AI zulke grote stappen zette werd het duidelijker: de basis zelf leren was niet meer de meest logische route. In plaats daarvan ben ik direct gaan coderen met Claude Code." },
+      { h: "Leren van developers", p: "Ik ben meetings gaan bijwonen met devs uit mijn team en heb geleerd over GitHub, GitLab, branches en merge requests. Stap voor stap kreeg ik meer grip op hoe een development-workflow er in de praktijk uitziet." },
+      { h: "De praktijk", p: "De afgelopen maanden ben ik actiever bezig met het oplossen van UX-gerelateerde tickets die al een tijd op de plank lagen, dan met het openen van Figma. Design en implementatie liggen nu dichter bij elkaar." },
+      { h: "Grenzen leren stellen", p: "Een belangrijke les is het stellen van grenzen met Claude, zodat ik niet zelf kleine UI-dingetjes ga fixen of dingen herstel die Claude op eigen initiatief heeft aangepast." }
+    ],
+    outcome: "Van UX-designer die af en toe code leest, naar iemand die actief meebouwt aan de codebase, met Figma nog steeds in de gereedschapskist maar niet meer als eerste stap."
+  } : {
+    subtitle: "Moving from Figma to Claude Code",
+    role: "Product Designer", year: "2026", duration: "ongoing",
+    tools: ["Claude Code", "GitHub", "GitLab", "Figma"],
+    intro: "Since the end of last year, I've been working more with Claude than with Figma. Here's how that happened.",
+    sections: [
+      { h: "The starting point", p: "At the end of last year I wanted to learn more than just HTML and CSS. I started with a bunch of Python courses, but as AI made such big steps, it became clear that learning the basics from scratch wasn't the most logical route anymore. So I skipped ahead and started coding directly with Claude Code." },
+      { h: "Learning from developers", p: "I started joining meetings with developers on my team and learned about GitHub, GitLab, branches, and merge requests, among other things. Step by step I got a better grip on what a real development workflow actually looks like." },
+      { h: "Day to day", p: "Over the past few months I've been more active fixing UX-related tickets that had been sitting on the shelf than opening Figma. Design and implementation now live much closer together." },
+      { h: "Setting boundaries", p: "An important lesson has been learning to set boundaries with Claude, so I'm not stuck fixing small UI details myself, or undoing things Claude changed on its own." }
+    ],
+    outcome: "From a UX designer who occasionally read code, to someone actively building in the codebase with Figma still in the toolkit, just no longer the first step."
+  };
+
+  return (
+    <div style={{ maxWidth: 820, margin: "0 auto" }}>
+      <BackBtn onClick={onBack} onMore={onMore} t={t} />
+
+      <h2 style={{ fontFamily: "var(--serif)", fontSize: "clamp(48px, 6.4vw, 84px)", lineHeight: 0.95, letterSpacing: "-0.025em", fontWeight: 400, margin: "20px 0 12px" }}>
+        Vibe Coding
+      </h2>
+      <p style={{ fontFamily: "var(--serif)", fontStyle: "italic", color: "var(--muted)", margin: 0, fontSize: 22 }}>{copy.subtitle}</p>
+
+      <CaseThumb id="vibe-coding" />
+
+      <dl className="va-case-meta" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 24,
+        borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)",
+        margin: "40px 0", padding: "20px 0", fontSize: 13 }}>
+        <Meta label={t.role_label}     val={copy.role}/>
+        <Meta label={t.year_label}     val={copy.year}/>
+        <Meta label={t.duration_label} val={copy.duration}/>
+        <Meta label={lang === "nl" ? "Bedrijf" : "Company"} val="Storyteq"/>
+      </dl>
+
+      <p style={{ fontFamily: "var(--serif)", fontSize: 26, lineHeight: 1.4, color: "var(--fg)", margin: "0 0 48px" }}>
+        {copy.intro}
+      </p>
+
+      {copy.sections.map((s, i) => (
+        <section key={i} className="va-case-section" style={{ display: "grid", gridTemplateColumns: "180px 1fr", gap: 32, padding: "24px 0", borderTop: "1px solid var(--line)" }}>
+          <h3 style={{ fontSize: 12, letterSpacing: ".1em", textTransform: "uppercase", color: "var(--muted)", margin: 0, fontWeight: 500 }}>
+            {String(i + 1).padStart(2, "0")} · {s.h}
+          </h3>
+          <p style={{ fontSize: 17, lineHeight: 1.6, margin: 0 }}>{s.p}</p>
+        </section>
+      ))}
+
+      <div style={{ marginTop: 48, padding: "28px 32px", background: "#CE7C5F", color: "#fff", borderRadius: 6 }}>
+        <span style={{ fontSize: 11, letterSpacing: ".12em", textTransform: "uppercase", opacity: 0.75 }}>{t.outcome_label}</span>
+        <p style={{ fontFamily: "var(--serif)", fontSize: 26, lineHeight: 1.25, margin: "8px 0 0" }}>{copy.outcome}</p>
+      </div>
+
+      <section className="va-case-section" style={{ display: "grid", gridTemplateColumns: "180px 1fr", gap: 32, padding: "24px 0", borderTop: "1px solid var(--line)", marginTop: 48 }}>
+        <h3 style={{ fontSize: 12, letterSpacing: ".1em", textTransform: "uppercase", color: "var(--muted)", margin: 0, fontWeight: 500 }}>
+          05 · {lang === "nl" ? "Toolbar opschonen" : "Cleaning up the toolbar"}
+        </h3>
+        <p style={{ fontSize: 17, lineHeight: 1.6, margin: 0 }}>
+          {lang === "nl"
+            ? "Ik heb de toolbar opgeschoond: van allerlei losse instellingsknoppen naar één dropdown met al deze instellingen en meer die daar logisch in pasten."
+            : "I cleaned up the toolbar, moving from a scattered set of individual setting buttons to a single dropdown containing all these settings and more that made sense to include there."}
+        </p>
+      </section>
+
+      <div className="va-photo-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginTop: 24 }}>
+        <div>
+          <img src="uploads/Before.png" alt="Toolbar — before"
+            style={{ width: "100%", display: "block", borderRadius: 6 }}/>
+          <p style={{ fontSize: 12, color: "var(--muted)", textAlign: "center", marginTop: 8 }}>{lang === "nl" ? "Voor" : "Before"}</p>
+        </div>
+        <div>
+          <img src="uploads/After.png" alt="Toolbar — after"
+            style={{ width: "100%", display: "block", borderRadius: 6 }}/>
+          <p style={{ fontSize: 12, color: "var(--muted)", textAlign: "center", marginTop: 8 }}>{lang === "nl" ? "Resultaat" : "After"}</p>
+        </div>
+      </div>
+
+      <div style={{ height: 80 }}/>
+    </div>
+  );
+}
+
+Object.assign(window, { VibeCodingCase });
