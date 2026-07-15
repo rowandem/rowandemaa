@@ -67,7 +67,7 @@ function VibeCodingCase({ lang, t, onBack, onMore }) {
 
       <section className="va-case-section" style={{ display: "grid", gridTemplateColumns: "180px 1fr", gap: 32, padding: "24px 0", borderTop: "1px solid var(--line)", marginTop: 48 }}>
         <h3 style={{ fontSize: 12, letterSpacing: ".1em", textTransform: "uppercase", color: "var(--muted)", margin: 0, fontWeight: 500 }}>
-          05 · {lang === "nl" ? "Toolbar opschonen" : "Cleaning up the toolbar"}
+          {lang === "nl" ? "Resultaat · Toolbar opschonen" : "Result · Cleaning up the toolbar"}
         </h3>
         <p style={{ fontSize: 17, lineHeight: 1.6, margin: 0 }}>
           {lang === "nl"
@@ -87,6 +87,24 @@ function VibeCodingCase({ lang, t, onBack, onMore }) {
             style={{ width: "100%", display: "block", borderRadius: 6 }}/>
           <p style={{ fontSize: 12, color: "var(--muted)", textAlign: "center", marginTop: 8 }}>{lang === "nl" ? "Resultaat" : "After"}</p>
         </div>
+      </div>
+
+      <section className="va-case-section" style={{ display: "grid", gridTemplateColumns: "180px 1fr", gap: 32, padding: "24px 0", borderTop: "1px solid var(--line)", marginTop: 48 }}>
+        <h3 style={{ fontSize: 12, letterSpacing: ".1em", textTransform: "uppercase", color: "var(--muted)", margin: 0, fontWeight: 500 }}>
+          {lang === "nl" ? "Resultaat · Resizable panelen" : "Result · Resizable panels"}
+        </h3>
+        <p style={{ fontSize: 17, lineHeight: 1.6, margin: 0 }}>
+          {lang === "nl"
+            ? "Ik heb de panelen resizable gemaakt; eerder waren ze statisch. Daarvoor moest ik alle velden en tabs nalopen om te zorgen dat alles op de juiste manier meerekt, en een dynamische max-breedte ingesteld die meebeweegt met de viewport van de gebruiker."
+            : "I made these panels resizable; before they were static. That meant checking every field and tab to make sure things stretched the right way, and setting a dynamic max-width that adapts to the user's viewport."}
+        </p>
+      </section>
+
+      <div className="va-photo-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginTop: 24 }}>
+        <img src="uploads/Template-builder-storyteq-07-15-2026_10_10_AM.png" alt="Template builder — panel at default width"
+          style={{ width: "100%", display: "block", borderRadius: 6 }}/>
+        <img src="uploads/Template-builder-storyteq-07-15-2026_10_10_AM (1).png" alt="Template builder — panel resized"
+          style={{ width: "100%", display: "block", borderRadius: 6 }}/>
       </div>
 
       <div style={{ height: 80 }}/>

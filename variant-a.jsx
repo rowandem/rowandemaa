@@ -149,13 +149,13 @@ function VariantA({ tweaks }) {
           </h3>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20 }}>
             {otherProjects(route.id).map((p) =>
-            <button key={p.id} onClick={() => go({ name: "case", id: p.id })} style={{ background: "none", border: "none", padding: 0, cursor: "pointer", textAlign: "left" }}>
+            <button key={p.id} onClick={() => go({ name: "case", id: p.id })} style={{ background: "none", border: "none", padding: 0, cursor: "pointer", textAlign: "left", display: "flex", flexDirection: "column" }}>
               <div style={{ background: p.bg, aspectRatio: "4 / 3", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden", transition: "transform .3s cubic-bezier(.2,.7,.2,1)" }}
                 onMouseEnter={(e) => e.currentTarget.style.transform = "translateY(-4px)"}
                 onMouseLeave={(e) => e.currentTarget.style.transform = "translateY(0)"}>
                 <img src={p.thumb} alt="" style={{ width: "72%", height: "72%", objectFit: "contain", filter: "drop-shadow(0 8px 16px rgba(0,0,0,0.14))" }} />
               </div>
-              <div style={{ marginTop: 10, fontFamily: "var(--serif)", fontSize: 16 }}>{p.name}</div>
+              <div style={{ marginTop: 10, fontFamily: "var(--serif)", fontSize: 16, lineHeight: 1.25, height: "2.5em", overflow: "hidden" }}>{p.name}</div>
               <div style={{ fontSize: 12, color: "var(--muted)" }}>{(p.catLabel || p.cat)} · {p.year}</div>
             </button>)}
           </div>
@@ -205,7 +205,7 @@ function StickyNav({ route, go, t }) {
 
 
   return (
-    <div className="va-nav" style={{
+    <div className={scrolled ? "va-nav va-nav-scrolled" : "va-nav"} style={{
         position: scrolled ? "fixed" : "relative",
         top: scrolled ? 16 : "auto",
         left: scrolled ? 16 : "auto",
@@ -242,7 +242,7 @@ function StickyLangToggle({ lang, setLang }) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   return (
-    <div style={{
+    <div className={scrolled ? "va-lang va-lang-scrolled" : "va-lang"} style={{
       position: scrolled ? "fixed" : "relative",
       top: scrolled ? 16 : "auto",
       right: scrolled ? 16 : "auto",
@@ -1146,7 +1146,7 @@ function CVPage({ lang, t }) {
       <Section title={t.cv.experience}>
         <div style={{ display: "flex", flexDirection: "column", gap: 12, paddingTop: 4 }}>
           {cv.experience.map((e, i) => (
-              <div key={i} className="va-cv-row" style={{ display: "grid", gridTemplateColumns: "180px 1fr 160px", gap: 24, padding: "20px 24px", borderRadius: 8, backgroundColor: "#D8DCE5" }}>
+              <div key={i} className="va-cv-row" style={{ display: "grid", gridTemplateColumns: "150px 1fr 120px", gap: 24, padding: "20px 24px", borderRadius: 8, backgroundColor: "#D8DCE5" }}>
                 <span style={{ fontSize: 13, color: "rgba(0,0,0,0.55)" }}>{e.yr}</span>
                 <div>
                   <strong style={{ fontWeight: 500, fontSize: 16 }}>{e.role}</strong>
@@ -1237,18 +1237,22 @@ function AboutPage({ lang, t }) {
             <h3 style={{ fontSize: 12, letterSpacing: ".12em", textTransform: "uppercase", color: "var(--muted)", margin: "0 0 16px", fontWeight: 500 }}>
               {a.beyondTitle}
             </h3>
+            <ul style={{ margin: 0, paddingLeft: 18, fontSize: 16, lineHeight: 1.65, color: "var(--fg)" }}>
             {a.beyondParagraphs.map((par, i) => (
-              <p key={i} style={{ fontSize: 16, lineHeight: 1.65, margin: "0 0 16px", color: "var(--fg)" }}>{par}</p>
+              <li key={i} style={{ marginBottom: 8 }}>{par}</li>
             ))}
+            </ul>
           </section>
 
           <section style={{ marginTop: 44 }}>
             <h3 style={{ fontSize: 12, letterSpacing: ".12em", textTransform: "uppercase", color: "var(--muted)", margin: "0 0 16px", fontWeight: 500 }}>
               {a.philosophyTitle}
             </h3>
+            <ul style={{ margin: 0, paddingLeft: 18, fontSize: 16, lineHeight: 1.65, color: "var(--fg)" }}>
             {a.philosophyParagraphs.map((par, i) => (
-              <p key={i} style={{ fontSize: 16, lineHeight: 1.65, margin: "0 0 16px", color: "var(--fg)" }}>{par}</p>
+              <li key={i} style={{ marginBottom: 8 }}>{par}</li>
             ))}
+            </ul>
           </section>
         </div>
         {/* Real photo */}

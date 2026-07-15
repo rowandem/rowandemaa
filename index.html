@@ -30,6 +30,9 @@
     .va-nameplate { margin-top: 60px !important; }
     .va-topbar  { flex-wrap: wrap !important; row-gap: 10px !important; }
     .va-nav     { gap: 16px !important; font-size: 12px !important; }
+    .va-lang-scrolled { display: none !important; }
+    .va-nav-scrolled { left: 50% !important; transform: translateX(-50%) !important; flex-wrap: nowrap !important; max-width: calc(100vw - 32px) !important; overflow-x: auto !important; }
+    .va-nav a { white-space: nowrap !important; }
     .va-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 14px !important; }
     .va-case-meta { grid-template-columns: repeat(2, 1fr) !important; }
     .va-case-section { grid-template-columns: 1fr !important; gap: 12px !important; }
@@ -39,7 +42,7 @@
     .va-about-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
     .va-phone-grid { grid-template-columns: repeat(2, 1fr) !important; }
     .va-photo-grid { grid-template-columns: 1fr !important; }
-    .va-filter-bar { flex-direction: column !important; align-items: flex-start !important; }
+    .va-filter-bar { flex-wrap: wrap !important; }
   }
   @media (max-width: 480px) {
     .va-header  { padding-left: 16px !important; padding-right: 16px !important; }

@@ -286,18 +286,18 @@ const CV = {
     intro: "Product Designer with 5 years of experience creating intuitive, scalable solutions for complex SaaS platforms, DAM systems and design tools including AI-driven solutions. Passionate about working on complex software in close collaboration with cross-functional Scrum teams.",
     experience: [
       { co: "Storyteq", role: "Product Designer", yr: "Nov 2024 Now", loc: "Software", bullets: [
-        "Designing product surfaces for a leading creative automation platform.",
-        "Working on scalable, AI-driven features for enterprise marketing teams."
+        "An AI-driven DAM that tags every element in an asset as a separate smart object, so teams can find, track, and reuse content instead of recreating it.",
+        "A creative automation module that turns Photoshop, Figma, or After Effects masters into dynamic templates, generating on-brand variations for video, digital, and print in batches."
       ]},
       { co: "JEX", role: "UX Designer", yr: "Aug 2021 Nov 2024", loc: "Software", bullets: [
-        "Backoffice is a workforce-management platform for staffing agencies, covering employees, clients, contracts, hours, costs, and compliance.",
-        "CRM is one component of a broader all-in-one platform that combines ATS, matching, scheduling, Backoffice, and ESS."
+        "A workforce-management platform built for staffing agencies, handling employees, clients, contracts, hours, costs, and compliance in one place.",
+        "A CRM component of an all-in-one staffing platform that also spans ATS, matching, scheduling, Backoffice, and ESS."
       ]},
       { co: "Povis", role: "UX/UI Designer", yr: "Feb 2021 Jun 2021", loc: "Graduation Project", bullets: [
-        "Graduation project: redesigned Povis's cash register interface and UX.",
+        "A modular POS ecosystem aimed at small businesses, differentiated by its wide range of integrations and hands-on service.",
       ]},
       { co: "SalesRed", role: "UX/UI Designer", yr: "Sep 2020 Nov 2020", loc: "Internship", bullets: [
-        "Research & redesign project of the free-trial request flow; measurably improved conversion."
+        "A cloud-based ERP solution for SMEs in which quotation and cost calculation take centre stage, covering the full path from request to invoice."
       ]}
     ],
     education: [
@@ -316,18 +316,18 @@ const CV = {
     intro: "Product Designer met 5 jaar ervaring in het ontwerpen van intuïtieve, schaalbare oplossingen voor complexe SaaS-platforms, DAM-systemen en design tools inclusief AI-gedreven oplossingen. Gedreven door het werken aan complexe software in nauwe samenwerking met cross-functionele Scrum-teams.",
     experience: [
       { co: "Storyteq", role: "Product Designer", yr: "Nov 2024 nu", loc: "Software", bullets: [
-        "Ontwerpen van productsurfaces voor een toonaangevend creatief automatiseringsplatform.",
-        "Werkt aan schaalbare, AI-gedreven features voor enterprise marketingteams."
+        "Een AI-gedreven DAM die elk element in een asset als een apart smart object tagt, zodat teams content kunnen vinden, volgen en hergebruiken in plaats van opnieuw te maken.",
+        "Een creative-automation-module die Photoshop-, Figma- of After Effects-masters omzet in dynamische templates en in batches on-brand varianten genereert voor video, digitaal en print."
       ]},
       { co: "JEX", role: "UX Designer", yr: "Aug 2021 Nov 2024", loc: "Software", bullets: [
-        "Backoffice is een workforce-managementplatform voor uitzendbureaus, met beheer van medewerkers, klanten, contracten, uren, kosten en compliance.",
-        "CRM is een onderdeel van een breder all-in-one platform dat ATS, matching, planning, backoffice en ESS combineert."
+        "Een workforce-managementplatform gebouwd voor uitzendbureaus, dat medewerkers, klanten, contracten, uren, kosten en compliance op één plek beheert.",
+        "Een CRM-onderdeel van een all-in-one uitzendplatform dat ook ATS, matching, planning, Backoffice en ESS omvat."
       ]},
       { co: "Povis", role: "UX/UI Designer", yr: "Feb 2021 Jun 2021", loc: "Afstudeerproject", bullets: [
-        "Afstudeerproject: herontwerp van Povis's kassa-interface en UX.",
+        "Een modulair POS-ecosysteem gericht op kleine ondernemers, onderscheidend door het brede aanbod aan integraties en persoonlijke service.",
       ]},
       { co: "SalesRed", role: "UX/UI Designer", yr: "Sep 2020 Nov 2020", loc: "Stage", bullets: [
-        "Onderzoek & herontwerp van de proefrit-aanvraagflow; aantoonbaar verbeterde conversie."
+        "Een cloud-based ERP-oplossing voor mkb waarin offertes en kostenberekening centraal staan, van aanvraag tot factuur."
       ]}
     ],
     education: [
