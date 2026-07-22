@@ -285,25 +285,25 @@ const CV = {
   en: {
     intro: "Product Designer with 5 years of experience creating intuitive, scalable solutions for complex SaaS platforms, DAM systems and design tools including AI-driven solutions. Passionate about working on complex software in close collaboration with cross-functional Scrum teams.",
     experience: [
-      { co: "Storyteq", role: "Product Designer", yr: "Nov 2024 Now", loc: "Software", bullets: [
+      { co: "Storyteq", role: "Product Designer", yr: "Nov 2024 - Now", loc: "Software", bullets: [
         "An AI-driven DAM that tags every element in an asset as a separate smart object, so teams can find, track, and reuse content instead of recreating it.",
         "A creative automation module that turns Photoshop, Figma, or After Effects masters into dynamic templates, generating on-brand variations for video, digital, and print in batches."
       ]},
-      { co: "JEX", role: "UX Designer", yr: "Aug 2021 Nov 2024", loc: "Software", bullets: [
+      { co: "JEX", role: "UX Designer", yr: "Aug 2021 - Nov 2024", loc: "Software", bullets: [
         "A workforce-management platform built for staffing agencies, handling employees, clients, contracts, hours, costs, and compliance in one place.",
         "A CRM component of an all-in-one staffing platform that also spans ATS, matching, scheduling, Backoffice, and ESS."
       ]},
-      { co: "Povis", role: "UX/UI Designer", yr: "Feb 2021 Jun 2021", loc: "Graduation Project", bullets: [
+      { co: "Povis", role: "UX/UI Designer", yr: "Feb 2021 - Jun 2021", loc: "Graduation Project", bullets: [
         "A modular POS ecosystem aimed at small businesses, differentiated by its wide range of integrations and hands-on service.",
       ]},
-      { co: "SalesRed", role: "UX/UI Designer", yr: "Sep 2020 Nov 2020", loc: "Internship", bullets: [
+      { co: "SalesRed", role: "UX/UI Designer", yr: "Sep 2020 - Nov 2020", loc: "Internship", bullets: [
         "A cloud-based ERP solution for SMEs in which quotation and cost calculation take centre stage, covering the full path from request to invoice."
       ]}
     ],
     education: [
       { sch: "Strategy and Information Architecture", deg: "Certificate", yr: "Mar 2023" },
-      { sch: "Communication & Multimedia Design", deg: "Bachelor's degree", yr: "Sep 2017 Jul 2021" },
-      { sch: "Marketing, Communication & Event Planning", deg: "MBO degree", yr: "Sep 2013 Jul 2016" },
+      { sch: "Communication & Multimedia Design", deg: "Bachelor's degree", yr: "Sep 2017 - Jul 2021" },
+      { sch: "Marketing, Communication & Event Planning", deg: "MBO degree", yr: "Sep 2013 - Jul 2016" },
     ],
     skills: ["Information architecture", "SaaS & DAM systems", "Design systems", "AI-driven product design", "Figma", "Scrum / Agile", "Claude", "Mixpanel", "Empathetic", "Team player", "Software"],
     languages: [
@@ -315,25 +315,25 @@ const CV = {
   nl: {
     intro: "Product Designer met 5 jaar ervaring in het ontwerpen van intuïtieve, schaalbare oplossingen voor complexe SaaS-platforms, DAM-systemen en design tools inclusief AI-gedreven oplossingen. Gedreven door het werken aan complexe software in nauwe samenwerking met cross-functionele Scrum-teams.",
     experience: [
-      { co: "Storyteq", role: "Product Designer", yr: "Nov 2024 nu", loc: "Software", bullets: [
+      { co: "Storyteq", role: "Product Designer", yr: "Nov 2024 - nu", loc: "Software", bullets: [
         "Een AI-gedreven DAM die elk element in een asset als een apart smart object tagt, zodat teams content kunnen vinden, volgen en hergebruiken in plaats van opnieuw te maken.",
         "Een creative-automation-module die Photoshop-, Figma- of After Effects-masters omzet in dynamische templates en in batches on-brand varianten genereert voor video, digitaal en print."
       ]},
-      { co: "JEX", role: "UX Designer", yr: "Aug 2021 Nov 2024", loc: "Software", bullets: [
+      { co: "JEX", role: "UX Designer", yr: "Aug 2021 - Nov 2024", loc: "Software", bullets: [
         "Een workforce-managementplatform gebouwd voor uitzendbureaus, dat medewerkers, klanten, contracten, uren, kosten en compliance op één plek beheert.",
         "Een CRM-onderdeel van een all-in-one uitzendplatform dat ook ATS, matching, planning, Backoffice en ESS omvat."
       ]},
-      { co: "Povis", role: "UX/UI Designer", yr: "Feb 2021 Jun 2021", loc: "Afstudeerproject", bullets: [
+      { co: "Povis", role: "UX/UI Designer", yr: "Feb 2021 - Jun 2021", loc: "Afstudeerproject", bullets: [
         "Een modulair POS-ecosysteem gericht op kleine ondernemers, onderscheidend door het brede aanbod aan integraties en persoonlijke service.",
       ]},
-      { co: "SalesRed", role: "UX/UI Designer", yr: "Sep 2020 Nov 2020", loc: "Stage", bullets: [
+      { co: "SalesRed", role: "UX/UI Designer", yr: "Sep 2020 - Nov 2020", loc: "Stage", bullets: [
         "Een cloud-based ERP-oplossing voor mkb waarin offertes en kostenberekening centraal staan, van aanvraag tot factuur."
       ]}
     ],
     education: [
       { sch: "Strategie en Informatie-architectuur", deg: "Certificaat", yr: "Mrt 2023" },
-      { sch: "Communication & Multimedia Design", deg: "Bachelor", yr: "Sep 2017 Jul 2021" },
-      { sch: "Marketing, Communicatie & Eventplanning", deg: "MBO", yr: "Sep 2013 Jul 2016" },
+      { sch: "Communication & Multimedia Design", deg: "Bachelor", yr: "Sep 2017 - Jul 2021" },
+      { sch: "Marketing, Communicatie & Eventplanning", deg: "MBO", yr: "Sep 2013 - Jul 2016" },
     ],
     skills: ["Informatie-architectuur", "SaaS & DAM-systemen", "Design systems", "AI-gedreven productontwerp", "Figma", "Scrum / Agile", "Claude", "Mixpanel", "Empathisch", "Teamspeler", "Software"],
     languages: [
@@ -360,7 +360,10 @@ const COPY = {
     about: {
       heading: "About me",
       lede: "I'm Rowan, Product Designer based in Rotterdam, but currently active in Amsterdam.",
-      paragraphs: [],
+      paragraphs: [
+        "I focus on making complex technical workflows feel simple and intuitive, but I also have experience setting up design systems, workshops, user testing, research, data analysis and more.",
+        "I'm at my best when I collaborate with others and shape ideas together."
+      ],
       photoCaption: "Rotterdam, 2023",
       beyondTitle: "Beyond work",
       beyondParagraphs: [
@@ -392,10 +395,10 @@ const COPY = {
     cv: { experience: "Ervaring", education: "Opleiding", skills: "Vaardigheden & tools", languages: "Talen", download: "Download PDF" },
     about: {
       heading: "Over mij",
-      lede: "Ik ben Rowan, Product Designer gevestigd in Rotterdam, met 5 jaar ervaring in het ontwerpen van intuïtieve, schaalbare oplossingen voor complexe SaaS-platforms, DAM-systemen, design tools en AI-gedreven oplossingen.",
+      lede: "Ik ben Rowan, Product Designer gevestigd in Rotterdam, maar op dit moment actief in Amsterdam.",
       paragraphs: [
-        "Ik focus op het eenvoudig en intuïtief laten aanvoelen van complexe technische workflows maar ik heb ook ervaring met het opzetten van design systems, workshops, gebruikerstesten, onderzoek, data-analyse en meer.",
-        "Ik ben op mijn best als ik samenwerk met anderen en samen ideeën vorm geef."
+        "Ik focus op het eenvoudig en intuïtief laten aanvoelen van complexe technische workflows, maar ik heb ook ervaring met het opzetten van design systems, workshops, gebruikerstesten, onderzoek, data-analyse en meer.",
+        "Ik ben op mijn best als ik samenwerk met anderen en we samen ideeën vormgeven."
       ],
       photoCaption: "Rotterdam, 2023",
       beyondTitle: "Naast werk",
@@ -404,7 +407,7 @@ const COPY = {
         "Binnen vind je me meestal gamend met vrienden of trainend in de sportschool voor een Hyrox.",
         "Ik ben ook een grote muziekliefhebber, vooral het ontdekken van nieuwe tracks om aan mijn playlists toe te voegen."
       ],
-      philosophyTitle: "Design filosofie",
+      philosophyTitle: "Designfilosofie",
       philosophyParagraphs: [
         "Ik ontwerp voor duidelijkheid en efficiëntie eerst, bruikbaarheid boven decoratie.",
         "Ik lever oplossingen die development-snelheid balanceren met schaalbaarheid op lange termijn.",

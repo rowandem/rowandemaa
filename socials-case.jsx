@@ -8,7 +8,7 @@ function SocialsCase({ lang, t, onBack, onMore }) {
     year: "2020",
     duration: "Seizoen 2019/2020",
     tools: "Sketch, Adobe Photoshop",
-    intro: "Voor mijn voetbalteam bij Z.V.V. Pelikaan houd ik samen met een teamgenoot (Martin van Yren) een Instagram account bij. Op dit account plaatsen we vooral wedstrijd posters voor op de zaterdagen. 2019/2020 was het eerste jaar voor ons om hier aan te werken en is mij zeker bevallen. Veel goede reacties en zelfs een van de posters heeft het AD gehaald. Voor het maken van deze posters maak ik gebruik van Sketch en Adobe Photoshop. Hieronder zijn een aantal posters te zien die ik heb ontworpen op dit account.",
+    intro: "Voor mijn voetbalteam bij Z.V.V. Pelikaan houd ik samen met een teamgenoot een Instagramaccount bij. Op dit account plaatsen we vooral wedstrijdposters voor op de zaterdagen. 2019/2020 was het eerste jaar voor ons om hier aan te werken en het is mij zeker bevallen. Veel goede reacties, en zelfs een van de posters heeft het AD gehaald. Voor het maken van deze posters gebruik ik Sketch en Adobe Photoshop. Hieronder zijn een aantal posters te zien die ik voor dit account heb ontworpen.",
     instagram: "Instagram: zvvpelikaan2",
     postersTitle: "Posters",
   } : {
@@ -17,7 +17,7 @@ function SocialsCase({ lang, t, onBack, onMore }) {
     year: "2020",
     duration: "Season 2019/2020",
     tools: "Sketch, Adobe Photoshop",
-    intro: "For my football team at Z.V.V. Pelikaan I ran an Instagram account together with a teammate. We mainly post match day posters for Saturday games. 2019/2020 was our first season doing this and I really enjoyed it. We got great reactions one of the posters even made it into the AD newspaper. I use Sketch and Adobe Photoshop to create these posters. Below is a selection of posters I designed for this account.",
+    intro: "For my football team at Z.V.V. Pelikaan I ran an Instagram account together with a teammate. We mainly posted match day posters for Saturday games. 2019/2020 was our first season doing this and I really enjoyed it. We got great reactions, and one of the posters even made it into the AD newspaper. I used Sketch and Adobe Photoshop to create these posters. Below is a selection of posters I designed for this account.",
     instagram: "Instagram: zvvpelikaan2",
     postersTitle: "Posters",
   };
