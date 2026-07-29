@@ -1,6 +1,79 @@
 // Vibe Coding case study — moving from Figma to Claude Code
 
 function VibeCodingCase({ lang, t, onBack, onMore }) {
+  const docBlocks = [
+    { name: "CLAUDE.md", body: `# Role
+You are a senior product designer and frontend engineer.
+
+# Product context
+This product helps [target audience] achieve [main goal].
+
+# Design principles
+- Prioritize clarity over visual decoration.
+- Use progressive disclosure for complex flows.
+- Keep screens focused on one primary action.
+- Avoid introducing new UI patterns unless necessary.
+
+# Design system rules
+- Use existing components before creating new ones.
+- Follow the spacing, typography, and color tokens in /design/tokens.md.
+- Do not hardcode styles unless explicitly requested.
+
+# Workflow
+Before making changes:
+1. Analyze the current UX.
+2. Explain the intended change.
+3. Identify affected components.
+4. Propose a plan.
+5. Wait for approval before editing major flows.
+
+# Output format
+For UX tasks, always provide:
+- UX reasoning
+- Suggested changes
+- Files affected
+- Risks or tradeoffs` },
+    { name: "components.md", body: `# Button rules
+
+Primary button:
+- Use only once per screen.
+- Reserved for the main action.
+- Never use for destructive actions.
+
+Secondary button:
+- Use for alternative actions.
+- Can appear multiple times.
+
+Destructive button:
+- Always requires confirmation.
+- Never placed as the default action.` },
+    { name: "SKILL.md", body: `---
+name: design-system-audit
+description: Review UI code against the product design system.
+---
+
+# Goal
+Find inconsistencies between implementation and design system rules.
+
+# Inputs
+- UI files
+- Design system documentation
+- Component library rules
+
+# Process
+1. Identify components used.
+2. Compare them against design system rules.
+3. Flag hardcoded styles.
+4. Suggest fixes.
+5. Prioritize by severity.
+
+# Output
+Return a table with:
+- Issue
+- Location
+- Severity
+- Recommended fix` },
+  ];
   const copy = lang === "nl" ? {
     subtitle: "Van Figma naar Claude Code",
     role: "Product Designer", year: "2026", duration: "doorlopend",
@@ -105,6 +178,36 @@ function VibeCodingCase({ lang, t, onBack, onMore }) {
           style={{ width: "100%", display: "block", borderRadius: 6 }}/>
         <img src="uploads/Template-builder-storyteq-07-15-2026_10_10_AM (1).png" alt="Template builder — panel resized"
           style={{ width: "100%", display: "block", borderRadius: 6 }}/>
+      </div>
+
+      <section className="va-case-section" style={{ display: "grid", gridTemplateColumns: "180px 1fr", gap: 32, padding: "24px 0", borderTop: "1px solid var(--line)", marginTop: 48 }}>
+        <h3 style={{ fontSize: 12, letterSpacing: ".1em", textTransform: "uppercase", color: "var(--muted)", margin: 0, fontWeight: 500 }}>
+          {lang === "nl" ? "Werkwijze · UX-vriendelijke context" : "Approach · UX-friendly context"}
+        </h3>
+        <div>
+          <p style={{ fontSize: 17, lineHeight: 1.6, margin: 0 }}>
+            {lang === "nl"
+              ? "Om Claude als designpartner te laten werken in plaats van een losse codegenerator, schrijf ik UX-vriendelijke context: een CLAUDE.md die de rol, designprincipes en workflow vastlegt, een components.md met concrete UI-regels, en losse skills voor terugkerende taken. Zo maakt Claude beslissingen die aansluiten op het design system in plaats van er tegenin te werken."
+              : "To make Claude work as a design partner instead of a loose code generator, I write UX-friendly context: a CLAUDE.md that sets the role, design principles and workflow, a components.md with concrete UI rules, and standalone skills for recurring tasks. That way Claude makes decisions that follow the design system instead of fighting it."}
+          </p>
+          <p style={{ fontSize: 14, color: "var(--muted)", margin: "16px 0 0" }}>
+            {lang === "nl" ? "Scroll door de documentatie hieronder." : "Scroll through the documentation below."}
+          </p>
+        </div>
+      </section>
+
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16, marginTop: 24 }}>
+        {docBlocks.map((d) => (
+          <div key={d.name} style={{ background: "#3A3F44", borderRadius: 8, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 8, padding: "10px 14px", borderBottom: "1px solid rgba(255,255,255,0.08)", background: "#33383D" }}>
+              <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#E06C5E" }}/>
+              <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#E5B95C" }}/>
+              <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#8BC26E" }}/>
+              <span style={{ marginLeft: 6, fontFamily: "ui-monospace, Menlo, monospace", fontSize: 12, color: "rgba(255,255,255,0.7)" }}>{d.name}</span>
+            </div>
+            <pre style={{ margin: 0, padding: "16px 18px", height: 360, overflowY: "auto", fontFamily: "ui-monospace, Menlo, Consolas, monospace", fontSize: 12.5, lineHeight: 1.55, color: "#E4E6E8", whiteSpace: "pre-wrap", wordBreak: "break-word" }}>{d.body}</pre>
+          </div>
+        ))}
       </div>
 
       <div style={{ height: 80 }}/>
