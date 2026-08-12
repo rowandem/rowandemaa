@@ -283,20 +283,20 @@ const CASE_STUDIES = {
 // CV / Resume
 const CV = {
   en: {
-    intro: "Product Designer with 5 years of experience creating intuitive, scalable solutions for complex SaaS platforms, DAM systems and design tools including AI-driven solutions. Passionate about working on complex software in close collaboration with cross-functional Scrum teams.",
+    intro: "Product Designer with 5 years of experience creating intuitive, scalable solutions for complex SaaS platforms, DAM systems and design tools including AI-driven products. Passionate about working on complex software in close collaboration with cross-functional Scrum teams.",
     experience: [
-      { co: "Storyteq", role: "Product Designer", yr: "Nov 2024 - Now", loc: "Software", bullets: [
+      { co: "Storyteq", role: "Product Designer", yr: "Nov 2024 - Now", loc: "Software", tags: ["SaaS", "DAM", "Design Tool", "Design System", "AI-Features", "Mixpanel (Data)", "Claude (Code)", "Vibe Coding", "Cross-Functional", "Stakeholders", "User Testing", "Research", "Maze", "Jira"], bullets: [
         "An AI-driven DAM that tags every element in an asset as a separate smart object, so teams can find, track, and reuse content instead of recreating it.",
         "A creative automation module that turns Photoshop, Figma, or After Effects masters into dynamic templates, generating on-brand variations for video, digital, and print in batches."
       ]},
-      { co: "JEX", role: "UX Designer", yr: "Aug 2021 - Nov 2024", loc: "Software", bullets: [
+      { co: "JEX", role: "UX Designer", yr: "Aug 2021 - Nov 2024", loc: "Software", tags: ["SaaS", "Backoffice", "CRM", "ERP", "ATS", "Condence (Data)", "Design System", "User Flows", "Information Architecture", "Research", "Interviews", "Stakeholders", "Maze", "Azure DevOps", "Ideation"], bullets: [
         "A workforce-management platform built for staffing agencies, handling employees, clients, contracts, hours, costs, and compliance in one place.",
         "A CRM component of an all-in-one staffing platform that also spans ATS, matching, scheduling, Backoffice, and ESS."
       ]},
-      { co: "Povis", role: "UX/UI Designer", yr: "Feb 2021 - Jun 2021", loc: "Graduation Project", bullets: [
+      { co: "Povis", role: "UX/UI Designer", yr: "Feb 2021 - Jun 2021", loc: "Graduation Project", tags: ["POS", "Research", "Interviews", "User Testing", "Redesign", "User Flows", "Ideation", "Stakeholders"], bullets: [
         "A modular POS ecosystem aimed at small businesses, differentiated by its wide range of integrations and hands-on service.",
       ]},
-      { co: "SalesRed", role: "UX/UI Designer", yr: "Sep 2020 - Nov 2020", loc: "Internship", bullets: [
+      { co: "SalesRed", role: "UX/UI Designer", yr: "Sep 2020 - Nov 2020", loc: "Internship", tags: ["ERP", "Research", "Interviews", "User Testing", "Redesign", "Web Design"], bullets: [
         "A cloud-based ERP solution for SMEs in which quotation and cost calculation take centre stage, covering the full path from request to invoice."
       ]}
     ],
@@ -305,7 +305,7 @@ const CV = {
       { sch: "Communication & Multimedia Design", deg: "Bachelor's degree", yr: "Sep 2017 - Jul 2021" },
       { sch: "Marketing, Communication & Event Planning", deg: "MBO degree", yr: "Sep 2013 - Jul 2016" },
     ],
-    skills: ["Information architecture", "SaaS & DAM systems", "Design systems", "AI-driven product design", "Figma", "Scrum / Agile", "Claude", "Mixpanel", "Empathetic", "Team player", "Software"],
+    skills: ["Information architecture", "SaaS", "DAM systems", "Design systems", "AI-driven product design", "Figma", "Scrum / Agile", "Claude (Code)", "Mixpanel", "Empathetic", "Team player", "Research", "Complex Software", "Ideation", "Software"],
     languages: [
       { lang: "Dutch", level: "Native" },
       { lang: "English", level: "Fluent" },
@@ -315,18 +315,18 @@ const CV = {
   nl: {
     intro: "Product Designer met 5 jaar ervaring in het ontwerpen van intuïtieve, schaalbare oplossingen voor complexe SaaS-platforms, DAM-systemen en design tools inclusief AI-gedreven oplossingen. Gedreven door het werken aan complexe software in nauwe samenwerking met cross-functionele Scrum-teams.",
     experience: [
-      { co: "Storyteq", role: "Product Designer", yr: "Nov 2024 - nu", loc: "Software", bullets: [
+      { co: "Storyteq", role: "Product Designer", yr: "Nov 2024 - nu", loc: "Software", tags: ["SaaS", "DAM", "Design Tool", "Design System", "AI-Features", "Mixpanel (Data)", "Claude (Code)", "Vibe Coding", "Cross-Functional", "Stakeholders", "User Testing", "Research", "Maze", "Jira"], bullets: [
         "Een AI-gedreven DAM die elk element in een asset als een apart smart object tagt, zodat teams content kunnen vinden, volgen en hergebruiken in plaats van opnieuw te maken.",
         "Een creative-automation-module die Photoshop-, Figma- of After Effects-masters omzet in dynamische templates en in batches on-brand varianten genereert voor video, digitaal en print."
       ]},
-      { co: "JEX", role: "UX Designer", yr: "Aug 2021 - Nov 2024", loc: "Software", bullets: [
+      { co: "JEX", role: "UX Designer", yr: "Aug 2021 - Nov 2024", loc: "Software", tags: ["SaaS", "Backoffice", "CRM", "ERP", "ATS", "Condence (Data)", "Design System", "User Flows", "Information Architecture", "Research", "Interviews", "Stakeholders", "Maze", "Azure DevOps", "Ideation"], bullets: [
         "Een workforce-managementplatform gebouwd voor uitzendbureaus, dat medewerkers, klanten, contracten, uren, kosten en compliance op één plek beheert.",
         "Een CRM-onderdeel van een all-in-one uitzendplatform dat ook ATS, matching, planning, Backoffice en ESS omvat."
       ]},
-      { co: "Povis", role: "UX/UI Designer", yr: "Feb 2021 - Jun 2021", loc: "Afstudeerproject", bullets: [
+      { co: "Povis", role: "UX/UI Designer", yr: "Feb 2021 - Jun 2021", loc: "Afstudeerproject", tags: ["POS", "Research", "Interviews", "User Testing", "Redesign", "User Flows", "Ideation", "Stakeholders"], bullets: [
         "Een modulair POS-ecosysteem gericht op kleine ondernemers, onderscheidend door het brede aanbod aan integraties en persoonlijke service.",
       ]},
-      { co: "SalesRed", role: "UX/UI Designer", yr: "Sep 2020 - Nov 2020", loc: "Stage", bullets: [
+      { co: "SalesRed", role: "UX/UI Designer", yr: "Sep 2020 - Nov 2020", loc: "Stage", tags: ["ERP", "Research", "Interviews", "User Testing", "Redesign", "Web Design"], bullets: [
         "Een cloud-based ERP-oplossing voor mkb waarin offertes en kostenberekening centraal staan, van aanvraag tot factuur."
       ]}
     ],
@@ -335,7 +335,7 @@ const CV = {
       { sch: "Communication & Multimedia Design", deg: "Bachelor", yr: "Sep 2017 - Jul 2021" },
       { sch: "Marketing, Communicatie & Eventplanning", deg: "MBO", yr: "Sep 2013 - Jul 2016" },
     ],
-    skills: ["Informatie-architectuur", "SaaS & DAM-systemen", "Design systems", "AI-gedreven productontwerp", "Figma", "Scrum / Agile", "Claude", "Mixpanel", "Empathisch", "Teamspeler", "Software"],
+    skills: ["Informatie-architectuur", "SaaS", "DAM-systemen", "Design systems", "AI-gedreven productontwerp", "Figma", "Scrum / Agile", "Claude (Code)", "Mixpanel", "Empathisch", "Teamspeler", "Research", "Complex Software", "Ideation", "Software"],
     languages: [
       { lang: "Nederlands", level: "Moedertaal" },
       { lang: "Engels", level: "Vloeiend" },
