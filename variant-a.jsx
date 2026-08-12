@@ -1154,6 +1154,12 @@ function CVPage({ lang, t }) {
                   <ul style={{ margin: "8px 0 0", paddingLeft: 18, fontSize: 14, lineHeight: 1.55 }}>
                     {e.bullets.map((b, j) => <li key={j} style={{ color: "rgba(0,0,0,0.6)" }}>{b}</li>)}
                   </ul>
+                  {e.tags &&
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginTop: 12 }}>
+                    {e.tags.map((tag, j) =>
+                      <span key={j} style={{ fontSize: 11, letterSpacing: ".02em", color: "rgba(0,0,0,0.6)", background: "rgba(255,255,255,0.55)", border: "0.5px solid rgba(0,0,0,0.12)", borderRadius: 999, padding: "3px 10px" }}>{tag}</span>
+                    )}
+                  </div>}
                 </div>
                 <span className="va-cv-loc" style={{ fontSize: 13, color: "rgba(0,0,0,0.55)", textAlign: "right" }}>{e.loc}</span>
               </div>
