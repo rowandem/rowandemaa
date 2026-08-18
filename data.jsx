@@ -364,7 +364,7 @@ const COPY = {
         "I focus on making complex technical workflows feel simple and intuitive, but I also have experience setting up design systems, workshops, user testing, research, data analysis and more.",
         "I'm at my best when I collaborate with others and shape ideas together."
       ],
-      photoCaption: "Rotterdam, 2023",
+      photoCaption: "Rotterdam, 2026",
       beyondTitle: "Beyond work",
       beyondParagraphs: [
         "When I'm not working, you can find me outside running or trying out new places to eat or grab a drink.",
@@ -400,7 +400,7 @@ const COPY = {
         "Ik focus op het eenvoudig en intuïtief laten aanvoelen van complexe technische workflows, maar ik heb ook ervaring met het opzetten van design systems, workshops, gebruikerstesten, onderzoek, data-analyse en meer.",
         "Ik ben op mijn best als ik samenwerk met anderen en we samen ideeën vormgeven."
       ],
-      photoCaption: "Rotterdam, 2023",
+      photoCaption: "Rotterdam, 2026",
       beyondTitle: "Naast werk",
       beyondParagraphs: [
         "Als ik niet aan het werk ben, ben ik meestal buiten aan het hardlopen of aan het uitproberen van nieuwe plekken om te eten of iets te drinken.",
