@@ -1266,7 +1266,7 @@ function AboutPage({ lang, t }) {
           <div style={{
             aspectRatio: "4/5", borderRadius: 4, overflow: "hidden"
           }}>
-            <img src="uploads/DSCF2863.jpg" alt="Rowan de Maa"
+            <img src="uploads/Profile Pic recolored.jpg" alt="Rowan de Maa"
             style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block" }} />
           </div>
           <figcaption style={{ fontSize: 12, color: "var(--muted)", marginTop: 10, fontStyle: "italic", fontFamily: "var(--serif)" }}>
