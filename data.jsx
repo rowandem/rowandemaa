@@ -1,6 +1,7 @@
 // Shared portfolio content EN + NL, projects, CV
 
 const PROJECTS = [
+  { id: "csm",             name: "CSM",             year: "2026", cat: "Web", bg: "#C3C9F0", frame: "desktop", accent: "#0A1A4A", thumb: "uploads/CSM thumbnail.png" },
   { id: "vibe-coding",     name: "Vibe Coding",     year: "2026", cat: "Software",     bg: "#CE7C5F", frame: "desktop", accent: "#FFFFFF", dark: true, thumb: "uploads/Claude thumbnail.png" },
   { id: "design-platform", name: "Design Tool", year: "2026", cat: "Software",     bg: "#2A2A2E", frame: "desktop", accent: "#5EC9B0", dark: true, thumb: "uploads/Design Tool Thummbnail.png" },
   { id: "dam-25",          name: "DAM",             year: "2025", cat: "Software",     bg: "#AAB2C8", frame: "desktop", accent: "#2B2F3A", thumb: "uploads/DAM Thummbnail.png" },
@@ -22,6 +23,38 @@ const PROJECTS = [
 
 // Case study content
 const CASE_STUDIES = {
+  "csm": {
+    en: {
+      title: "CSM", subtitle: "A website for Concept Studio MARA",
+      role: "Product Designer", year: "2026", duration: "ongoing",
+      tools: ["Claude Code", "Claude Design"], company: "Concept Studio MARA",
+      summary: "I designed and built a website for a start-up called Concept Studio MARA, doing all the work with Claude Code and Claude Design. I've always wanted to learn more about code and tried many times to build things like this from scratch with the basic HTML and CSS I picked up in school. Now, with AI moving so fast, I can finally bring my own creativity to life all on my own.",
+      sections: [
+        { h: "The brief", p: "I sat down with the client to figure out what mattered most: the key information and the vibe of the website. CSM is a creative company that still wants to work in a very structured way." },
+        { h: "The idea", p: "That structured mindset sparked the idea of the visual tabs on the side, the kind you'd find in an old filing folder to keep everything ordered. It gives the site character while keeping navigation clear." },
+        { h: "Keeping it simple", p: "We wanted the website to stay simple and short, so visitors instantly understand what the company is about, what CSM can do for them, and how to easily get in touch." },
+        { h: "Learning by building", p: "Beyond design, I also learned how to maintain and host websites with AI, along with a lot of other new things. Being able to put my creativity into live, working products on my own is incredibly exciting." },
+      ],
+      liveText: "Visit the live site",
+      liveUrl: "https://conceptstudiomara.com",
+      outcome: "A live, simple and characterful website that instantly shows what Concept Studio MARA does, built entirely by me with AI. It's live and still in progress; the next step is adding a few cases to give a better impression of their work.",
+    },
+    nl: {
+      title: "CSM", subtitle: "Een website voor Concept Studio MARA",
+      role: "Product Designer", year: "2026", duration: "doorlopend",
+      tools: ["Claude Code", "Claude Design"], company: "Concept Studio MARA",
+      summary: "Ik heb een website ontworpen en gebouwd voor een start-up genaamd Concept Studio MARA, waarbij ik al het werk met Claude Code en Claude Design heb gedaan. Ik wilde altijd al meer over code leren en heb vaak geprobeerd dit soort dingen from scratch te bouwen met de basiskennis HTML en CSS van school. Nu, met AI die zo snel gaat, kan ik mijn creativiteit eindelijk helemaal zelf tot leven brengen.",
+      sections: [
+        { h: "De briefing", p: "Ik ben met de klant gaan zitten om te bepalen wat het belangrijkst was: de belangrijkste informatie en de vibe van de website. CSM is een creatief bedrijf dat toch heel gestructureerd wil werken." },
+        { h: "Het idee", p: "Die gestructureerde manier van werken bracht het idee van de visuele tabs aan de zijkant, zoals je die in een oude map zou hebben om alles geordend te houden. Het geeft de site karakter en houdt de navigatie duidelijk." },
+        { h: "Simpel houden", p: "We wilden de website simpel en kort houden, zodat bezoekers direct begrijpen waar het bedrijf voor staat, wat CSM voor hen kan doen en hoe ze makkelijk contact kunnen opnemen." },
+        { h: "Leren door te bouwen", p: "Naast het ontwerp heb ik ook geleerd hoe ik met AI websites kan onderhouden en hosten, en nog veel meer nieuwe dingen. Mijn creativiteit helemaal zelf in live, werkende producten kunnen stoppen is ontzettend leuk." },
+      ],
+      liveText: "Bekijk de live site",
+      liveUrl: "https://conceptstudiomara.com",
+      outcome: "Een live, simpele en karaktervolle website die direct laat zien wat Concept Studio MARA doet, volledig door mij gebouwd met AI. De site is live en nog in ontwikkeling; de volgende stap is het toevoegen van een aantal cases om een beter beeld van hun werk te geven.",
+    },
+  },
   "design-platform": {
     en: {
       title: "Design Platform", subtitle: "Template Builder",

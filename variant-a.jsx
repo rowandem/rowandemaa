@@ -398,11 +398,10 @@ function CaseStudy({ id, lang, t, onBack, onMore }) {
       <div style={{ maxWidth: 820, margin: "0 auto" }}>
         <BackBtn onClick={onBack} onMore={onMore} t={t} />
         <h2 style={{ fontFamily: "var(--serif)", fontSize: "clamp(40px, 5vw, 64px)", lineHeight: 1, letterSpacing: "-0.02em", fontWeight: 400, margin: "20px 0 8px" }}>{p?.name}</h2>
-        <p style={{ fontFamily: "var(--serif)", fontStyle: "italic", color: "var(--muted)", margin: 0, fontSize: 20 }}>{p?.cat} · {p?.year}</p>
-        <div style={{ background: p?.bg, height: 360, borderRadius: 6, marginTop: 36,
-          display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <Thumb p={p} />
-        </div>
+        <p style={{ fontFamily: "var(--serif)", fontStyle: "italic", color: "var(--muted)", margin: 0, fontSize: 20 }}>{p?.catLabel || p?.cat} · {p?.year}</p>
+
+        <CaseThumb id={id} />
+
         <p style={{ fontFamily: "var(--serif)", fontSize: 22, lineHeight: 1.45, marginTop: 28, color: "var(--muted)" }}>
           {lang === "en" ? "Case study coming soon this slot is reserved for a longer-form write-up." : "Case study volgt dit blok is gereserveerd voor een uitgebreider verhaal."}
         </p>
@@ -449,6 +448,21 @@ function CaseStudy({ id, lang, t, onBack, onMore }) {
           <p style={{ fontSize: 17, lineHeight: 1.6, margin: 0 }}>{s.p}</p>
         </section>
       )}
+
+      {id === "csm" &&
+      <>
+        <div style={{ marginTop: 48, marginBottom: 32, padding: "28px 32px", background: "#0A1A4A", color: "#fff", borderRadius: 6 }}>
+          <span style={{ fontSize: 11, letterSpacing: ".12em", textTransform: "uppercase", opacity: 0.7 }}>{t.outcome_label}</span>
+          <p style={{ fontFamily: "var(--serif)", fontSize: 28, lineHeight: 1.2, margin: "8px 0 0" }}>{cs.outcome}</p>
+        </div>
+        <a href={cs.liveUrl} target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--sans)", fontSize: 14, letterSpacing: ".02em", textTransform: "uppercase", color: "var(--fg)", border: "1px solid var(--line)", borderRadius: 999, padding: "12px 24px", textDecoration: "none" }}>
+          {cs.liveText} →
+        </a>
+
+        <img src="uploads/Concept-Studio-MARA-We-build-what-brands-have-not-thought-of-yet--08-19-2026_09_37_AM.png" alt="Concept Studio MARA website"
+          style={{ width: "100%", display: "block", borderRadius: 6, marginTop: 40, border: "2px solid #fff" }}/>
+      </>
+      }
 
       {id === "design-platform" &&
       <>
